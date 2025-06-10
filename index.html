@@ -1,39 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Currículo - Seu Nome</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
-        p { line-height: 1.5; }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Álvaro Tavares - Currículo Online</title>
+<style>
+  /* Reset básico */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    color: #fff;
+    min-height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+    padding: 20px;
+  }
+  .container {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    animation: fadeIn 1.2s ease forwards;
+  }
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  header p {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.85;
+  }
+  .contact {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .contact a {
+    color: #ade8f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .contact a:hover {
+    color: #caf0f8;
+  }
+  section {
+    margin-top: 30px;
+  }
+  section h2 {
+    border-bottom: 3px solid #38bdf8;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    color: #ade8f4;
+  }
+  ul {
+    list-style: inside disc;
+    margin-left: 20px;
+    line-height: 1.5;
+  }
+  .highlight {
+    color: #ffd166;
+    font-weight: 700;
+  }
+  .ia-section {
+    background: #0891b2;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-style: italic;
+  }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
 </head>
 <body>
-    <h1>Seu Nome</h1>
-    <p>Email: seuemail@exemplo.com</p>
-    <p>Telefone: (00) 00000-0000</p>
+<div class="container">
+  <header>
+    <h1>Álvaro de Souza Tavares Amorim</h1>
+    <p>Product Owner | Analista de Negócios | Especialista em Requisitos e Processos</p>
+  </header>
 
-    <h2>Resumo</h2>
-    <p>Analista de negócios com experiência em requisitos, automação e programação.</p>
+  <div class="contact">
+    <span>📍 Ipiranga, Belo Horizonte - MG</span>
+    <span>📞 +55 (32) 99808-5722</span>
+    <span>✉️ <a href="mailto:alvaro1@outlook.com">alvaro1@outlook.com</a></span>
+    <span>🔗 <a href="https://www.linkedin.com/in/alvaro-tavaress/" target="_blank" rel="noopener noreferrer">linkedin.com/in/alvaro-tavaress</a></span>
+  </div>
 
-    <h2>Experiência</h2>
+  <section>
+    <h2>Resumo Profissional</h2>
     <ul>
-        <li>Empresa XYZ - Analista de Negócios (2023 - Presente)</li>
-        <li>Empresa ABC - Assistente Técnico (2021 - 2023)</li>
+      <li>Expert em Gestão de Projetos, Desenvolvimento de Produtos e Serviços com foco em metas, prazos e OKRs.</li>
+      <li>Atuação constante em melhoria contínua, eficiência e ambientes colaborativos que promovem transformação.</li>
+      <li>Habilidade comprovada no relacionamento com equipes técnicas, clientes e fornecedores para alcançar resultados alinhados com SLAs.</li>
     </ul>
+  </section>
 
-    <h2>Formação</h2>
-    <p>Curso de Análise de Sistemas - Universidade X (2020)</p>
-
-    <h2>Habilidades</h2>
+  <section>
+    <h2>Formação Acadêmica & Certificações</h2>
     <ul>
-        <li>Requisitos e análise de negócios</li>
-        <li>Programação em C# e Python</li>
-        <li>Automação e RPA</li>
-        <li>Inglês básico (em aprendizado)</li>
+      <li>Pós-Graduação em Engenharia de Software - Anhanguera (2024)</li>
+      <li>MBA em Big Data e Inteligência Competitiva - Faculdade Descomplica (2022)</li>
+      <li>Graduação em Administração - UEMG (2016)</li>
+      <li>Certificado: Business Intelligence Foundation (CertiProf, 2024)</li>
+      <li>Certificado: Scrum Fundamentals Certified (SCRUMstudy, 2022)</li>
+      <li>Curso: RPA Developer Foundation - UIPath (2025)</li>
+      <!-- Pode incluir mais conforme quiser -->
     </ul>
+  </section>
+
+  <section>
+    <h2>Experiência Profissional</h2>
+    <ul>
+      <li><span class="highlight">Sinqia S.A.</span> (Set/2024 - Atual) – Analista de Negócios
+        <ul>
+          <li>Implementação e otimização de soluções de automação (RPA) que reduziram o tempo de resolução em 20%.</li>
+          <li>Desenvolvimento de especificações funcionais, testes e ajustes, com foco na satisfação do cliente.</li>
+        </ul>
+      </li>
+
+      <li><span class="highlight">Squadra Digital</span> (Jan/2024 - Ago/2024) – Product Owner
+        <ul>
+          <li>Gestão do produto Merchant Services no Banco Inter, contribuindo para transformação digital e design centrado no usuário.</li>
+          <li>Aumento de 15% na eficiência após melhorias implementadas.</li>
+        </ul>
+      </li>
+
+      <li><span class="highlight">Ábaco Tecnologia</span> (Ago/2021 - Jun/2023) – Analista de Negócios
+        <ul>
+          <li>Mapeamento de processos e desenvolvimento de personalizações ERP, aumentando a eficiência em 25%.</li>
+        </ul>
+      </li>
+      <!-- Outros podem ser adicionados aqui -->
+    </ul>
+  </section>
+
+  <section class="ia-section">
+    <h2>Minha paixão por Inteligência Artificial</h2>
+    <p>Sou um entusiasta e aprendiz constante de Inteligência Artificial, focado em aplicar tecnologias inovadoras para automação, análise de dados e melhoria contínua de processos. Minha busca é sempre por soluções que unam eficiência e inovação, trazendo impacto real para os produtos e serviços.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Álvaro de Souza Tavares Amorim. Currículo Online.
+  </footer>
+</div>
 </body>
 </html>
